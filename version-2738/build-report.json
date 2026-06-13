@@ -1,0 +1,34 @@
+{
+  "summary": {
+    "movie_count": 2000,
+    "category_count": 12,
+    "video_url_count": 20,
+    "movies_by_category": {
+      "剧情精选": 167,
+      "动作冒险": 167,
+      "爱情都市": 167,
+      "悬疑惊悚": 167,
+      "喜剧欢乐": 167,
+      "科幻奇幻": 167,
+      "历史战争": 167,
+      "动画动漫": 167,
+      "纪录综艺": 166,
+      "家庭治愈": 166,
+      "犯罪警匪": 166,
+      "热门剧集": 166
+    }
+  },
+  "validation": {
+    "html_files": 2020,
+    "movie_detail_pages": 2000,
+    "category_pages": 12,
+    "category_card_count": 2000,
+    "player_pages": 2000,
+    "baidu_missing": [],
+    "logo_missing": [],
+    "missing_links_sample": [],
+    "ok": true
+  },
+  "zip_path": "/mnt/data/guochan_movie_static_site.zip",
+  "zip_size_bytes": 17511106
+}

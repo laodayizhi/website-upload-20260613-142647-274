@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片 - 国产精品视频网</title>
+  <meta name="description" content="在国产精品视频网搜索影片标题、地区、类型、年份、标签和简介，快速找到想看的影视内容。">
+  <meta name="keywords" content="国产精品,国产影视,国产电影,国产剧情,国产综艺,国产动漫,在线观看,高清视频,免费播放,影视剧,电视剧,电影大全,综艺节目,动漫动画,影片搜索">
+  <meta name="robots" content="index,follow">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="搜索影片 - 国产精品视频网">
+  <meta property="og:description" content="在国产精品视频网搜索影片标题、地区、类型、年份、标签和简介，快速找到想看的影视内容。">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="国产精品视频网首页">
+        <span class="brand-icon" aria-hidden="true">▶</span>
+        <span class="brand-text">
+          <strong>国产精品视频网</strong>
+          <small>高清国产影视剧在线观看平台</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="categories.html">分类</a>
+        <a class="nav-link" href="rankings.html">排行榜</a>
+        <a class="nav-link" href="archive.html">片库</a>
+        <a class="nav-link" href="category-guochan.html">国产精品</a>
+        <a class="nav-link" href="category-movie.html">电影剧场</a>
+        <a class="nav-link" href="category-series.html">剧集连播</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" type="button" aria-label="打开搜索">⌕</button>
+        <button class="icon-button menu-toggle" type="button" aria-label="打开菜单">☰</button>
+      </div>
+    </div>
+    <div class="container header-search" hidden>
+      <form action="search.html" method="get" class="search-form">
+        <input name="q" type="search" placeholder="搜索影片标题、地区、类型、标签..." autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+    <nav class="mobile-nav" hidden aria-label="移动端导航">
+      <div class="container mobile-nav-inner">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="categories.html">分类</a>
+        <a class="nav-link" href="rankings.html">排行榜</a>
+        <a class="nav-link" href="archive.html">片库</a>
+        <a class="nav-link" href="category-guochan.html">国产精品</a>
+        <a class="nav-link" href="category-movie.html">电影剧场</a>
+        <a class="nav-link" href="category-series.html">剧集连播</a>
+        <a class="nav-link" href="category-asia.html">亚洲精选</a>
+        <a class="nav-link" href="category-western.html">欧美大片</a>
+        <a class="nav-link" href="category-anime-variety.html">动漫综艺</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero gradient-hero">
+      <div class="container">
+        <p class="section-kicker">Search</p>
+        <h1>搜索 / 筛选</h1>
+        <p>输入影片标题、地区、类型、标签或年份，快速检索全站影片数据。</p>
+      </div>
+    </section>
+    <section class="container search-page">
+      <form class="big-search" data-search-page-form>
+        <input type="search" name="q" data-search-input placeholder="例如：国产、悬疑、2024、喜剧、韩国">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="search-tools">
+        <select data-search-category>
+          <option value="">全部分类</option>
+          <option value="guochan">国产精品</option>
+          <option value="movie">电影剧场</option>
+          <option value="series">剧集连播</option>
+          <option value="asia">亚洲精选</option>
+          <option value="western">欧美大片</option>
+          <option value="anime-variety">动漫综艺</option>
+          <option value="suspense">悬疑犯罪</option>
+          <option value="love-family">爱情家庭</option>
+          <option value="action-adventure">动作冒险</option>
+          <option value="new-hot">新片热榜</option>
+        </select>
+        <select data-search-year>
+          <option value="">全部年代</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2020">2020</option>
+        </select>
+      </div>
+      <p class="search-summary" data-search-summary>请输入关键词开始搜索。</p>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-about">
+        <a class="footer-brand" href="index.html">
+          <span class="brand-icon" aria-hidden="true">▶</span>
+          <span>
+            <strong>国产精品视频网</strong>
+            <small>高清国产影视剧在线观看平台</small>
+          </span>
+        </a>
+        <p>国产精品视频网提供最新最全的国产影视剧、电影、综艺、动漫在线观看，高清画质，免费播放，是您观看国产精品内容的首选平台。汇聚国产剧情片、动作片、爱情片、科幻片等各类精品影视作品。</p>
+        <p class="footer-contact">联系邮箱：<a href="mailto:contact@example.com">contact@example.com</a></p>
+      </section>
+      <section>
+        <h2>站内导航</h2>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="categories.html">分类总览</a></li>
+          <li><a href="rankings.html">排行榜</a></li>
+          <li><a href="archive.html">完整片库</a></li>
+          <li><a href="search.html">搜索筛选</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>热门分类</h2>
+        <ul>
+            <li><a href="category-guochan.html">国产精品</a></li>
+            <li><a href="category-movie.html">电影剧场</a></li>
+            <li><a href="category-series.html">剧集连播</a></li>
+            <li><a href="category-asia.html">亚洲精选</a></li>
+            <li><a href="category-western.html">欧美大片</a></li>
+            <li><a href="category-anime-variety.html">动漫综艺</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 国产精品视频网. All rights reserved.</p>
+      <p>高清影视 · 免费播放 · 响应式静态网站</p>
+    </div>
+  </footer>
+
+  <script src="assets/search-data.js"></script>
+  <script src="assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

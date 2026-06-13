@@ -1,0 +1,28 @@
+{
+  "movies_parsed": 2000,
+  "movie_detail_pages": 2000,
+  "category_pages": 16,
+  "category_coverage": 2000,
+  "html_pages": 2024,
+  "missing_baidu_pages": [],
+  "missing_player_pages": [],
+  "visible_rule_hits": [],
+  "category_counts": {
+    "动作热血": 130,
+    "爱情剧情": 130,
+    "悬疑惊悚": 130,
+    "科幻奇幻": 130,
+    "喜剧生活": 131,
+    "动漫青春": 115,
+    "历史战争": 131,
+    "都市家庭": 129,
+    "纪录文艺": 113,
+    "日韩精选": 124,
+    "欧美佳片": 131,
+    "国产精选": 131,
+    "冒险世界": 113,
+    "犯罪推理": 131,
+    "治愈合家": 118,
+    "古装武侠": 113
+  }
+}
